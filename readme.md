@@ -1,82 +1,74 @@
-# Classifying Hotel Reservation Cancelations
+# NLP with r/crossfit
+What is r/crossfit?
 
-Demand forecasting is essential for hotel management to accurately meet guest needs while avoiding unnecessary costs. Reliable estimates of net demand are necessary for:
-- Preparation of resources including staff and food offered at hotel
-- Revenue management
-- Pricing and cancelation policy governance
+**Crossfit** is a sport for everyone incorporating constant variation, functional movements, and high intensity training.
 
-Hotels have the option of implementing strict cancelation policies, but these can be a detriment and result in less bookings.
+**Reddit** is a network of communities based on people's interests. r/crossfit is a subreddit group open to anyone to join and discuss.
 
->## Can hotel reservation cancelations be predicted?
+---
 
-Of course, no prediction can ever be exact, but implementing data science models for this classficiation problem can narrow the degree of uncertainty around reservation cancelations.
+What Crossfitters discuss and value can be informative to gym business owners looking to recover from pandemic impacts or just improve their services.
 
->By implementing a random forest model, a precision of 89% for 'canceled' class was achieved on unseen data.
+>## What is the discourse amongst crossfit redditors?
 
-Tuning the classification model for the precision metric allows for a more conservative approach. This sides on higher confidence of predicted cancelations in efforts to avoid situations of under-preparedness for hotel guests.
+
+In this project, NLP methods are used to discover insights about what Crossfitters value and discuss in the subreddit community.
+
 
 ---
 # Approach:
 
-1. Understand/clean data
-2. Perform Exploratory Data Analysis (EDA)
-3. Metrics selection
-4. Implement classification algorithms
-4. Model selection
+1. Scraped subreddit posts using [pushshift](https://www.reddit.com/r/pushshift/comments/bcxguf/new_to_pushshift_read_this_faq/) API
+2. Data Cleaning / Pre-Processing
+4. Topic modeling / Tuning
+4. Pre-pandemic vs Pandemic analysis
 
-# Data used:
+# Data:
 
-The data is sourced from an article called [Hotel booking demand datasets](https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib6) by Nuno Antonio, Ana Almeida, and Luis Nunes in 2019.
+r/crossfit:
+- 2008 - Feb 19, 2021
+- 221K members
+- 65,792 submissions (posts) not including comments
 
-The scrubbed data was made publicly available from the hotels' property management system (PMS) for investigation and learning.
+# Features:
 
-Data over a 2-year span contains:
-- 2 hotels
-- ~120K observations
-- 32 features
+Each document in corpus is a post: Title + Body
 
-# Features used:
-
-18 features were selected. For a full list of features and additional details, please reference the data source article.
-
-Basic booking features:
+Additional features collected include:
 
 | Feature | Description
 | --------------- | --------------
-| Hotel | H1 (Resort Hotel) or H2 (City Hotel)
-| Stay Month | Month the arrival date occurs
-| Week nights | Number of week nights in reservation
-| Weekend nights | Number of weekend nights in reservation
-| Lead time | Days in advance of arrival date booking was made
-| Adults | Number of adults in reservation
-| Country | **Transformed**: Nationality of guest. 1 for Portugal, 0 for any other
-| ADR | Average daily rate
-| Total stay cost | **Calculated**: Number of days in stay * ADR
-| ADR over average hotel cost | **Calculated**: 1 if exceeds average hotel ADR for all bookings in train set. 0 if under average ADR
+| id | Reddit submission (post) ID. Can be used to pull comments / replies
+| author | Submission author
+| time | Time of submission converted to datetime
+| num_comments | Number of comments submission received
+| score | Net score submission received. Upvotes minus downvotes
+| upvote_ratio | % upvotes contributing to score
+| url | URL related to post, commonly to comment, image, video, or external link posted
+| video | Categorical identifying whether post contains: video, image, or none. Imputed from reddit features.
 <br/>
 
-Additional Details:
-| Feature | Description
-| --------------- | --------------
-| Meal | Meal type following hospitality standards
-| Parking spaces | Number of parking spaces needed
-| Special requests | Number of special requests made
-| Deposit type | Ex: No deposit, Non-refundable
-| Agent | **Transformed**: 1 if agent used for booking. 0 if no agent used
-| Marget segment | Ex: Online Travel Agency
+# Tools:
 
-<br/>
-
-# Tools Used:
-
-- Tableau
 - Pandas
-- Seaborn
-- Matplotlib
+- Spacy - lemmatization
+- Sklearn
+    - TFIDF Vectorization
+    - NMF Topic Modeling
+- Sentiment Analysis
+    - IBM Tone Analyzer
+    - Vader Sentiment
+- Visualization
+    - Tableau
+    - Seaborn
+    - Matplotlib
 
 # File Organization:
-- **Hotel Reservation Cancelations.pdf** - 5 minute presentation of project findings
-- **hotel_bookings.ipynb** - main notebook
-- **hotels.py** - helper functions utilized by main notebook
-- **hotel_create_psql_db.ipynb** - notebook used to load original data in CSV formats to a postgres sql database locally
-- **sql_challenges** dir - used to submit SQL exercises unrelated to project success
+- **scatter_text** dir - notebook used to make pre-pandemic vs pandemic scatter text for word frequency analysis
+- **sentiment_analysis** dir - notebook used to perform sentiment analysis on glassman documents. small sample size. future work would invlolve more posts and include comments/replies
+- **Crossfit Subreddit.pdf** - 5 minute presentation of project findings
+- **cf_reddit_data_collection.ipynb** - notebook used to collect reddit submissions. Also includes code for collecting comments/replies for future work
+- **cf_reddit_topics.ipynb** - main notebook used for topic modeling
+- **reddit.py** - helper functions utilized by main notebook
+
+
