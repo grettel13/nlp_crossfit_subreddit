@@ -1,5 +1,12 @@
-# NLP with r/crossfit
-What is r/crossfit?
+# Analyzing Crossfit Subreddit with NLP
+
+*Using Natural Language Processing techniques on the discourse within the Crossfit subreddit community to gain insights for athletes and gym owners.*
+
+Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for more detailed insights.
+
+![](garage_gym.png)
+
+**First:** What is r/crossfit?
 
 **Crossfit** is a sport for everyone incorporating constant variation, functional movements, and high intensity training.
 
