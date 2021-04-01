@@ -4,7 +4,7 @@
 
 Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for more detailed insights.
 
-![](garage_gym.png)
+![](./images/garage_gym.png)
 
 **First:** What is r/crossfit?
 
