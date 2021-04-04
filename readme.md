@@ -16,7 +16,7 @@ Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-su
 
 What Crossfitters discuss and value can be informative to gym business owners looking to recover from pandemic impacts or just improve their services.
 
-In this project, NLP methods are used to discover insights about what Crossfitters value and discuss in the subreddit community.
+In this project, NLP methods are used to discover insights about what Crossfitters value and discuss in the subreddit community and what that means for gym owners.
 
 
 ---
