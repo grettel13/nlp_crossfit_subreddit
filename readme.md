@@ -6,9 +6,9 @@ Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-su
 
 ![](./images/garage_gym.png)
 
-What Crossfitters discuss and value can be informative to gym business owners looking to recover from pandemic impacts or just improve their services.
+2020 was a particularly bad year for gym athletes and owners due to the pandemic and Greg Glassman's (former Crossfit owner) negative actions. What Crossfitters discuss and value can be informative to gym business owners looking to recover from these impacts or just improve their services.
 
-In this project, NLP methods are used to discover insights about what Crossfitters value and discuss in the subreddit community and what that means for gym owners.
+In this project, NLP methods are used to discover insights about what recent changes mean for Crossfit athletes and gym owners.
 
 ---
 
@@ -25,16 +25,19 @@ In this project, NLP methods are used to discover insights about what Crossfitte
 ---
 # Approach:
 
-1. Scraped subreddit posts using [pushshift](https://www.reddit.com/r/pushshift/comments/bcxguf/new_to_pushshift_read_this_faq/) API
+1. Data Collection
 2. Data Cleaning / Pre-Processing
 4. Topic modeling / Tuning
 4. Pre-pandemic vs Pandemic analysis
+5. Results/Findings
 
 # Data:
 
-r/crossfit:
-- 2008 - Feb 19, 2021
-- 221K members
+Data was collected by scraping subreddit posts using [pushshift](https://www.reddit.com/r/pushshift/comments/bcxguf/new_to_pushshift_read_this_faq/) API.
+
+Details:
+- posts dated 2008 - Feb 19, 2021
+- 232K subreddit members
 - 65,792 submissions (posts) not including comments
 
 # Features:
