@@ -2,22 +2,25 @@
 
 *Using Natural Language Processing techniques on the discourse within the Crossfit subreddit community to gain insights for athletes and gym owners.*
 
-Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for more detailed insights.
+Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for a more detailed walkthrough of project insights.
 
 ![](./images/garage_gym.png)
-
-**First:** What is r/crossfit?
-
-**Crossfit** is a sport for everyone incorporating constant variation, functional movements, and high intensity training.
-
-**Reddit** is a network of communities based on people's interests. r/crossfit is a subreddit group open to anyone to join and discuss.
-
----
 
 What Crossfitters discuss and value can be informative to gym business owners looking to recover from pandemic impacts or just improve their services.
 
 In this project, NLP methods are used to discover insights about what Crossfitters value and discuss in the subreddit community and what that means for gym owners.
 
+---
+
+<div style="text-align:center"><img src="./images/rcrossfit.png" /></div>
+
+> What is r/crossfit?
+
+**Crossfit** is a sport for everyone incorporating constant variation, functional movements, and high intensity training.
+
+**Reddit** is a network of communities based on people's interests.
+
+**r/crossfit** is a reddit community channel (subreddit) for people interested in crossfit, open to anyone to join and discuss
 
 ---
 # Approach:
