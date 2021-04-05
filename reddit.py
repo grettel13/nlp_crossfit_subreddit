@@ -2,6 +2,7 @@ import pandas as pd
 import re
 import string
 import datetime
+import numpy as np
 
 def get_details(comment):
     try:
@@ -129,3 +130,33 @@ def lemmatize_spacy(sentence):
     global nlp
     doc = nlp(sentence)
     return ' '.join([token.lemma_ for token in doc])
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+from itertools import cycle
+
+def plot_tsne(doc_cluster, low_data, topic_names=[]):
+    target = doc_cluster
+
+    if len(topic_names) == 0:
+        target_names = np.unique(doc_cluster)
+    else:
+        target_names = topic_names
+
+    colors = cycle(['r','g','b','c','m','yellow','orange','k', 'gray','y', 'magenta', 'w'])
+    target_ids = range(len(target_names))
+    plt.figure(dpi=150)
+
+    ax = plt.axes()
+    ax.set_facecolor("white")
+
+    for i, c, label in zip(target_ids, colors, target_names):
+        plt.scatter(low_data[target == i, 0], low_data[target == i, 1], c=c, label=label, s=1, alpha=1)
+    plt.legend(fontsize=10, loc='upper left', frameon=True, facecolor='#FFFFFF', edgecolor='#333333')
+    plt.xlim(-100,100);
+    plt.title("Topics with TSNE", fontsize=12)
+    plt.ylabel("TSNE Axis 2", fontsize=12)
+    plt.xlabel("TSNE Axis 1", fontsize=12);
+    plt.xticks(fontsize=10)
+    plt.yticks(fontsize=10);
+    return
