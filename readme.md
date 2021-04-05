@@ -74,11 +74,14 @@ Additional features collected include:
     - Matplotlib
 
 # File Organization:
-- **scatter_text** dir - notebook used to make pre-pandemic vs pandemic scatter text for word frequency analysis
-- **sentiment_analysis** dir - notebook used to perform sentiment analysis on glassman documents. small sample size. future work would invlolve more posts and include comments/replies
+- **images** - dir containing pictures/images used in readme and notebook
+- **scatter_text** - dir containing scatter_text output
+- **1_cf_data_collection.ipynb** - notebook used to collect reddit submissions. Also includes code for collecting comments/replies for future work
+- **2_cf_topic_modeling.ipynb** - notebook used for topic modeling
+- **3_cf_visualizations.ipynb** - notebook used for visualizations
+- **4_cf_pandemic_vs_prepandemic_text** - notebook used to make pre-pandemic vs pandemic scatter text for word frequency analysis
+- **5_cf_sentiment_analysis** notebook used to perform sentiment analysis on glassman documents. small sample size. future work would invlolve more posts and include comments/replies
 - **Crossfit Subreddit.pdf** - 5 minute presentation of project findings
-- **cf_reddit_data_collection.ipynb** - notebook used to collect reddit submissions. Also includes code for collecting comments/replies for future work
-- **cf_reddit_topics.ipynb** - main notebook used for topic modeling
-- **reddit.py** - helper functions utilized by main notebook
+- **reddit.py** - helper functions utilized by notebooks
 
 
