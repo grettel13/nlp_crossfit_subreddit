@@ -2,7 +2,7 @@
 
 *Using Natural Language Processing techniques on the discourse within the Crossfit subreddit community to gain insights for athletes and gym owners.*
 
-> **Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for a more detailed walkthrough of project insights.**
+> ## **Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for a more detailed walkthrough of project insights.**
 
 ![](./images/garage_gym.png)
 
