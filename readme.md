@@ -1,14 +1,14 @@
-# Analyzing Crossfit Subreddit with NLP
+# Analyzing CrossFit Subreddit with NLP
 
-*Using Natural Language Processing techniques on the discourse within the Crossfit subreddit community to gain insights for athletes and gym owners.*
+*Using Natural Language Processing techniques on the discourse within the CrossFit subreddit community to gain insights for athletes and gym owners.*
 
 > ## **Please see my [blog post](https://gretteljuarez.medium.com/analyzing-crossfit-subreddit-with-nlp-4a4e9f008518) for a more detailed walkthrough of project insights.**
 
 ![](./images/garage_gym.png)
 
-2020 was a particularly bad year for gym athletes and owners due to the pandemic and Greg Glassman's (former Crossfit owner) negative actions. What Crossfitters discuss and value can be informative to gym business owners looking to recover from these impacts or just improve their services.
+2020 was a particularly bad year for gym athletes and owners due to the pandemic and Greg Glassman's (former CrossFit owner) negative actions. What Crossfitters discuss and value can be informative to gym business owners looking to recover from these impacts or just improve their services.
 
-In this project, NLP methods are used to discover insights about what recent changes mean for Crossfit athletes and gym owners.
+In this project, NLP methods are used to discover insights about what recent changes mean for CrossFit athletes and gym owners.
 
 ---
 
@@ -16,11 +16,11 @@ In this project, NLP methods are used to discover insights about what recent cha
 
 > What is r/crossfit?
 
-**Crossfit** is a sport for everyone incorporating constant variation, functional movements, and high intensity training.
+**CrossFit** is a sport for everyone incorporating constant variation, functional movements, and high intensity training.
 
 **Reddit** is a network of communities based on people's interests.
 
-**r/crossfit** is a reddit community channel (subreddit) for people interested in crossfit, open to anyone to join and discuss
+**r/crossfit** is a reddit community channel (subreddit) for people interested in CrossFit, open to anyone to join and discuss
 
 ---
 # Approach:
@@ -75,8 +75,8 @@ Additional features collected include:
 
 # Findings:
 
-Using applied Natural Language Processing techniques, this analysis provides insights for athletes and gym owners from the online Crossfit reddit community. This investigation outlined:
-- Athletes actively use this online community to seek feedback on their lifts and celebrate personal records. The volume of posts in this topic correlates with Crossfit Games and Open. Perhaps hosting in-house competitions could increase gym member engagement
+Using applied Natural Language Processing techniques, this analysis provides insights for athletes and gym owners from the online CrossFit reddit community. This investigation outlined:
+- Athletes actively use this online community to seek feedback on their lifts and celebrate personal records. The volume of posts in this topic correlates with CrossFit Games and Open. Perhaps hosting in-house competitions could increase gym member engagement
 - Racism is an important discussion and many feel strongly about taking a stance against it
 - There is a potential opportunity for gym owners to provide remote services such as combined programming and lift feedback given many more athletes have their own equipment due to the pandemic
 
