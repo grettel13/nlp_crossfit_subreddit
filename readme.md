@@ -73,6 +73,14 @@ Additional features collected include:
     - Seaborn
     - Matplotlib
 
+# Findings
+
+Using applied Natural Language Processing techniques, this analysis provides insights for athletes and gym owners from the online Crossfit reddit community. This investigation outlined:
+- Athletes actively use this online community to seek feedback on their lifts and celebrate personal records. The volume of posts in this topic correlates with Crossfit Games and Open. Perhaps hosting in-house competitions could increase gym member engagement
+- Racism is an important discussion and many feel strongly about taking a stance against it
+- There is a potential opportunity for gym owners to provide remote services such as combined programming and lift feedback given many more athletes have their own equipment due to the pandemic
+
+
 # File Organization:
 - ```images``` - dir containing pictures/images used in readme and notebook
 - ```scatter_text``` - dir containing scatter_text output
