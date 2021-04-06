@@ -73,7 +73,7 @@ Additional features collected include:
     - Seaborn
     - Matplotlib
 
-# Findings
+# Findings:
 
 Using applied Natural Language Processing techniques, this analysis provides insights for athletes and gym owners from the online Crossfit reddit community. This investigation outlined:
 - Athletes actively use this online community to seek feedback on their lifts and celebrate personal records. The volume of posts in this topic correlates with Crossfit Games and Open. Perhaps hosting in-house competitions could increase gym member engagement
